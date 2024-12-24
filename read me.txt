@@ -1,0 +1,1 @@
+.out\build\GCC 13.2.0 x86_64-w64-mingw32 (ucrt64)下的FunctionManager.exe为编译得到的可执行文件，function.txt为数据存放文件。
