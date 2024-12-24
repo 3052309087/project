@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/30523/Desktop/bored/main.c" "CMakeFiles/FunctionManager.dir/main.c.obj" "gcc" "CMakeFiles/FunctionManager.dir/main.c.obj.d"
-  "C:/Users/30523/Desktop/bored/test.c" "CMakeFiles/FunctionManager.dir/test.c.obj" "gcc" "CMakeFiles/FunctionManager.dir/test.c.obj.d"
+  "C:/Users/30523/Desktop/project/main.c" "CMakeFiles/FunctionManager.dir/main.c.obj" "gcc" "CMakeFiles/FunctionManager.dir/main.c.obj.d"
+  "C:/Users/30523/Desktop/project/test.c" "CMakeFiles/FunctionManager.dir/test.c.obj" "gcc" "CMakeFiles/FunctionManager.dir/test.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
