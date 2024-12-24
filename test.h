@@ -1,5 +1,8 @@
 #ifndef DDB29614_6335_445C_A83A_CC9BFD3DAE1E
 #define DDB29614_6335_445C_A83A_CC9BFD3DAE1E
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
 typedef struct 
 {
     int id;                // 函数编号

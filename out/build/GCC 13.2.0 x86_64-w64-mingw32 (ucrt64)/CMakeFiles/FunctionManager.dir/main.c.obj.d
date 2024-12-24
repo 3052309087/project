@@ -1,5 +1,6 @@
 CMakeFiles/FunctionManager.dir/main.c.obj: \
- C:\Users\30523\Desktop\project\main.c C:/msys64/ucrt64/include/stdio.h \
+ C:\Users\30523\Desktop\project\main.c \
+ C:\Users\30523\Desktop\project\test.h C:/msys64/ucrt64/include/stdio.h \
  C:/msys64/ucrt64/include/corecrt_stdio_config.h \
  C:/msys64/ucrt64/include/corecrt.h C:/msys64/ucrt64/include/_mingw.h \
  C:/msys64/ucrt64/include/_mingw_mac.h \
@@ -18,5 +19,4 @@ CMakeFiles/FunctionManager.dir/main.c.obj: \
  C:/msys64/ucrt64/include/malloc.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/mm_malloc.h \
  C:/msys64/ucrt64/include/errno.h C:/msys64/ucrt64/include/string.h \
- C:/msys64/ucrt64/include/sec_api/string_s.h \
- C:\Users\30523\Desktop\project\test.h
+ C:/msys64/ucrt64/include/sec_api/string_s.h
