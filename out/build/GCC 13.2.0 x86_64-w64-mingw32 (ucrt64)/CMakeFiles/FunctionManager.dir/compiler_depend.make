@@ -22,9 +22,9 @@ CMakeFiles/FunctionManager.dir/main.c.obj: C:/Users/30523/Desktop/project/main.c
   C:/msys64/ucrt64/include/string.h \
   C:/msys64/ucrt64/include/swprintf.inl \
   C:/msys64/ucrt64/include/vadefs.h \
-  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/limits.h \
-  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/mm_malloc.h \
-  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/syslimits.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/limits.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mm_malloc.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h \
   C:/Users/30523/Desktop/project/test.h
 
 CMakeFiles/FunctionManager.dir/test.c.obj: C:/Users/30523/Desktop/project/test.c \
@@ -48,9 +48,9 @@ CMakeFiles/FunctionManager.dir/test.c.obj: C:/Users/30523/Desktop/project/test.c
   C:/msys64/ucrt64/include/string.h \
   C:/msys64/ucrt64/include/swprintf.inl \
   C:/msys64/ucrt64/include/vadefs.h \
-  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/limits.h \
-  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/mm_malloc.h \
-  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/syslimits.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/limits.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mm_malloc.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h \
   C:/Users/30523/Desktop/project/test.h
 
 
@@ -96,12 +96,12 @@ C:/msys64/ucrt64/include/swprintf.inl:
 
 C:/msys64/ucrt64/include/vadefs.h:
 
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/limits.h:
-
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/mm_malloc.h:
-
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.1.0/include/syslimits.h:
-
 C:/Users/30523/Desktop/project/test.h:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/limits.h:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mm_malloc.h:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h:
 
 C:/Users/30523/Desktop/project/test.c:
