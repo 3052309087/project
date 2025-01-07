@@ -22,5 +22,5 @@ void del_all();
 void find_id();
 int num(char *str);
 void find_prototype();
-
+void replacement(char *p);
 #endif /* DDB29614_6335_445C_A83A_CC9BFD3DAE1E */

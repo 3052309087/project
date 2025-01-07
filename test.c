@@ -214,6 +214,8 @@ int num(char *str)//判断是否为数字
 }
 void add()
 {
+    int ii = 0;
+    char ch = '\0';
     function Function[999];
     int count = 0;
     // 读取文件中的函数编号到多少了
@@ -237,15 +239,57 @@ void add()
     printf("当前编号为：%d\n", count);
     Function[count].id = count;
     printf("请输入函数名：\n");
-    scanf("%s", Function[count].easy_name);
+    ch = getchar();
+    while ((ch = getchar()) != '\n')
+    {
+        Function[count].easy_name[ii] = ch;
+        ii++;
+    }
+    Function[count].easy_name[ii] = '\0';
+    replacement(Function[count].easy_name);
+    ii = 0;
     printf("请输入函数原型：\n");
-    scanf("%s", Function[count].name);
+    
+    while ((ch = getchar()) != '\n')
+    {
+        Function[count].name[ii] = ch;
+        ii++;
+    }
+    Function[count].name[ii] = '\0';
+    replacement(Function[count].name);
+    ii = 0;
     printf("请输入函数功能：\n");
-    scanf("%s", Function[count].function);
+   
+    while ((ch = getchar()) != '\n')
+    {
+        Function[count].function[ii] = ch;
+        ii++;
+    }
+    Function[count].function[ii] = '\0';
+    replacement(Function[count].function);
+    ii = 0;
+    
     printf("请输入返回值：\n");
-    scanf("%s", Function[count].my_return);
+   
+    while ((ch = getchar()) != '\n')
+    {
+        Function[count].my_return[ii] = ch;
+        ii++;
+    }
+    Function[count].my_return[ii] = '\0';
+    replacement(Function[count].my_return);
+    ii = 0;
+    
     printf("请输入说明：\n");
-    scanf("%s", Function[count].illustrate);
+    
+    while ((ch = getchar()) != '\n')
+    {
+        Function[count].illustrate[ii] = ch;
+        ii++;
+    }
+    Function[count].illustrate[ii] = '\0';
+    replacement(Function[count].illustrate);
+    ii = 0;
     fprintf(file, "%d %s %s %s %s %s\n", Function[count].id,Function[count].easy_name, Function[count].name, Function[count].function, Function[count].my_return, Function[count].illustrate);
     fclose(file);
     printf("函数信息已保存到文件。\n");
@@ -254,6 +298,8 @@ void add()
 }
 void id_revise() 
 {
+    int ii = 0;
+    char ch = '\0';
     int id;
     char a [999] = "\0";
     int found = 0; // 0_未找到匹配记录，1_找到匹配记录
@@ -300,15 +346,55 @@ void id_revise()
             printf("找到编号为 %d 的函数信息，开始修改。\n", id);
 
             printf("请输入新的函数名：\n");
-            scanf("%s", temp_function.easy_name);
+            ch = getchar();
+            while ((ch = getchar()) != '\n')
+                {
+                    temp_function.easy_name[ii] = ch;
+                    ii++;
+                }
+            temp_function.easy_name[ii] = '\0';
+            replacement(temp_function.easy_name);
+            ii = 0;
+            
             printf("请输入新的函数原型：\n");
-            scanf("%s", temp_function.name);
+            while ((ch = getchar()) != '\n')
+                {
+                    temp_function.name[ii] = ch;
+                    ii++;
+                }
+            temp_function.name[ii] = '\0';
+            replacement(temp_function.name);
+            ii = 0;
             printf("请输入新的函数功能：\n");
-            scanf("%s", temp_function.function);
+            while ((ch = getchar()) != '\n')
+                {
+                    temp_function.function[ii] = ch;
+                    ii++;
+                }
+            temp_function.function[ii] = '\0';
+            replacement(temp_function.function);
+            ii = 0;
+
             printf("请输入新的返回值：\n");
-            scanf("%s", temp_function.my_return);
+            while ((ch = getchar()) != '\n')
+                {
+                    temp_function.my_return[ii] = ch;
+                    ii++;
+                }
+            temp_function.my_return[ii] = '\0';
+            replacement(temp_function.my_return);
+            ii = 0;
+
             printf("请输入新的说明：\n");
-            scanf("%s", temp_function.illustrate);
+
+            while ((ch = getchar()) != '\n')
+                {
+                    temp_function.illustrate[ii] = ch;
+                    ii++;
+                }
+            temp_function.illustrate[ii] = '\0';
+            replacement(temp_function.illustrate);
+            ii = 0;
         }
         // 无论是否修改，都重新写入到新文件中
         fprintf(tempFile, "%d %s %s %s %s %s\n", 
@@ -343,6 +429,8 @@ void id_revise()
     printf("函数信息已成功修改。\n");
 }
 void name_revise() {
+    char ch = '\0';
+    int ii = 0;
     char prototype[50];
     int found_count = 0; // 记录匹配的函数个数
     function temp_function; // 临时变量，用于存储当前读取的函数信息
@@ -405,17 +493,56 @@ void name_revise() {
 
     // 修改用户选择的函数
     int selected_id = match_ids[choice - 1]; // 获取所选记录的原始编号
-    printf("请输入新的函数名：\n");
-    scanf("%s", matches[choice - 1].easy_name);
-    printf("请输入新的函数原型：\n");
-    scanf("%s", matches[choice - 1].name);
-    printf("请输入新的函数功能：\n");
-    scanf("%s", matches[choice - 1].function);
-    printf("请输入新的返回值：\n");
-    scanf("%s", matches[choice - 1].my_return);
-    printf("请输入新的说明：\n");
-    scanf("%s", matches[choice - 1].illustrate);
+            printf("请输入新的函数名：\n");
+            ch = getchar();
+            while ((ch = getchar()) != '\n')
+                {
+                    matches[choice - 1].easy_name[ii] = ch;
+                    ii++;
+                }
+            matches[choice - 1].easy_name[ii] = '\0';
+            replacement(matches[choice - 1].easy_name);
+            ii = 0;
+            
+            printf("请输入新的函数原型：\n");
+            while ((ch = getchar()) != '\n')
+                {
+                    matches[choice - 1].name[ii] = ch;
+                    ii++;
+                }
+            matches[choice - 1].name[ii] = '\0';
+            replacement(matches[choice - 1].name);
+            ii = 0;
+            printf("请输入新的函数功能：\n");
+            while ((ch = getchar()) != '\n')
+                {
+                    matches[choice - 1].function[ii] = ch;
+                    ii++;
+                }
+            matches[choice - 1].function[ii] = '\0';
+            replacement(matches[choice - 1].function);
+            ii = 0;
 
+            printf("请输入新的返回值：\n");
+            while ((ch = getchar()) != '\n')
+                {
+                    matches[choice - 1].my_return[ii] = ch;
+                    ii++;
+                }
+            matches[choice - 1].my_return[ii] = '\0';
+            replacement(matches[choice - 1].my_return);
+            ii = 0;
+
+            printf("请输入新的说明：\n");
+
+            while ((ch = getchar()) != '\n')
+                {
+                    matches[choice - 1].illustrate[ii] = ch;
+                    ii++;
+                }
+            matches[choice - 1].illustrate[ii] = '\0';
+            replacement(matches[choice - 1].illustrate);
+            ii = 0;
     // 将修改后的记录写回文件
     file = fopen("function.txt", "r");
     FILE *tempFile = fopen("function1.txt", "w");
@@ -500,3 +627,15 @@ void display()
 
     fclose(file);
 }
+void replacement(char *p)
+{
+    
+   for (int i = 0; i < 50; i++)
+   {
+    if (p[i] == ' ')
+        {
+            p[i] = '_';
+        }
+   }
+   
+}//将字符串中的空格替换为下划线
